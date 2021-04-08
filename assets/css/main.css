@@ -26,15 +26,15 @@ h1{
     grid-row: 5;
     text-transform: uppercase;
     transform-origin: center;
-    color: var(--white);
-    text-shadow:1px 0 0 var(--orange),0 1px 0 var(--orange),-1px 0 0 var(--orange),0 -1px 0 var(--orange);
+    /* color: var(--white); */
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1.5px var(--orange);
+    /* text-shadow:1px 0 0 var(--orange),0 1px 0 var(--orange),-1px 0 0 var(--orange),0 -1px 0 var(--orange); */
     transition: all .3s ease-in;
 }
 
 h1:hover{
-    transform: scale(1.01);
     color :var(--orange);
-    letter-spacing: .2rem;
 }
 
 .home{
@@ -79,6 +79,7 @@ a:hover{
 
 .home img{
     width: 75%;
+    z-index: -1;
     grid-column: 8 / 12;
     grid-row: 4 / 6;
     transition: all .3s ease-in;
