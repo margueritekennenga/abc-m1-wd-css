@@ -88,3 +88,43 @@ a:hover{
 a:hover + img{
     transform: scale(1.08) rotate(10deg);
 }
+
+.items{
+    padding : 2em;
+}
+
+#sommaire{
+    background-color: var(--dkgreen);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.basic-box{
+    min-width: 150px;
+    height: 150px;
+    border: 1.5px solid var(--orange);
+    transition: all .5s;
+    margin: 15px;
+}
+
+.basic-box:hover{
+    background-color: var(--orange);
+    transform: scale(1.05) rotate(3deg);
+}
+
+.basic-box a{
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    text-align: center;
+}
+
+.basic-box span, .basic-box p{
+    color : var(--white);
+}
+
+.basic-box span{
+    font-size: 4em;
+    font-weight: 700;
+}
