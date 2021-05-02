@@ -15,7 +15,6 @@
 .home{
     background-color: var(--white);
     width: 100vw;
-    height: 100vh;
     overflow: hidden;
     font-family: "IBM";
     color: var(--dkgreen);
@@ -36,13 +35,13 @@ header a, footer a{
 
 main{
     width: 80%;
-    height: 84vh;
     display: flex;
     margin: auto;
+    flex-wrap: wrap;
 }
 
 main > div{
-    width: 50%;
+    width: 40%;
 }
 
 .letter-image, .letter-content{
@@ -50,7 +49,6 @@ main > div{
 }
 
 .letter-image div{
-    background-color: blueviolet;
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -88,3 +86,13 @@ main > div{
     line-height: 1.2;
 }
 
+
+@media screen and (max-width: 400px)
+{
+    p
+    {
+        color: red; 
+        background-color: black;
+        font-size: 1.2em;
+    }
+}
