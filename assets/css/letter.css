@@ -87,12 +87,15 @@ main > div{
 }
 
 
-@media screen and (max-width: 400px)
+@media screen and (max-width: 500px)
 {
-    p
-    {
-        color: red; 
-        background-color: black;
-        font-size: 1.2em;
+    main{
+        width: 90%;
+    }
+    .letter-content span{
+        display: none;
+    }
+    main > div{
+        width: 100%;
     }
 }
