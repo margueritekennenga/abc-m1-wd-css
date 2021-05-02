@@ -34,6 +34,7 @@ header a, footer a{
 }
 
 main{
+    min-height: 84vh;
     width: 80%;
     display: flex;
     margin: auto;
@@ -46,6 +47,11 @@ main > div{
 
 .letter-image, .letter-content{
     padding: 5vh;
+}
+
+.letter-image{
+    display: flex;
+    align-items: center;
 }
 
 .letter-image div{
